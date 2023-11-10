@@ -152,6 +152,7 @@ type FunctionDefinition struct {
 	// The jsonschema package is provided for convenience, but you should
 	// consider another specialized library if you require more complex schemas.
 	Parameters any `json:"parameters"`
+	Responses  any `json:"responses,omitempty"`
 }
 
 // Deprecated: use FunctionDefinition instead.
